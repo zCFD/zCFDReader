@@ -1,0 +1,12 @@
+NAME
+  zCFDReader::vtkzCFDReader
+LIBRARY_NAME
+  vtkzCFDReader
+DEPENDS
+  VTK::CommonCore
+  VTK::CommonExecutionModel
+PRIVATE_DEPENDS
+  ParaView::Core
+  VTK::vtksys
+  VTK::mpi
+  Boost::python

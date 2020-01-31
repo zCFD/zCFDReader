@@ -1,0 +1,11 @@
+NAME
+  zCFDReader
+DESCRIPTION
+  Reader for zCFD files
+REQUIRES_MODULES
+  VTK::CommonCore
+  VTK::FiltersCore
+  VTK::mpi
+  VTK::hdf5
+  Boost::python
+  hdf5
