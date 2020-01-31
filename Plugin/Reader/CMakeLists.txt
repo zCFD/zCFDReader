@@ -9,8 +9,7 @@ vtk_module_find_package(
   COMPONENTS python)
 
 vtk_module_find_package(
-  PACKAGE python
-  VERSION 3.5)
+  PACKAGE Python3)
 
 vtk_module_add_module(zCFDReader::vtkzCFDReader
   CLASSES ${classes}
