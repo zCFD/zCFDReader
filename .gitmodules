@@ -1,0 +1,3 @@
+[submodule "Plugin/Reader/hdf5"]
+	path = Plugin/Reader/hdf5
+	url = git@github.com:zenotech/hdf5.git
