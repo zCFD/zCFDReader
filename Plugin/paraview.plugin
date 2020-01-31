@@ -8,4 +8,3 @@ REQUIRES_MODULES
   VTK::mpi
   VTK::hdf5
   Boost::python
-  hdf5

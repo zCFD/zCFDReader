@@ -8,5 +8,6 @@ DEPENDS
 PRIVATE_DEPENDS
   ParaView::Core
   VTK::vtksys
+  VTK::hdf5
   VTK::mpi
   Boost::python

@@ -8,11 +8,19 @@ vtk_module_find_package(
   VERSION 1.50
   COMPONENTS python)
 
-vtk_module_find_package(PACKAGE hdf5)
+vtk_module_find_package(
+  PACKAGE python
+  VERSION 3.5)
 
 vtk_module_add_module(zCFDReader::vtkzCFDReader
   CLASSES ${classes}
   PRIVATE_HEADERS ${private_headers})
+
+vtk_module_include(zCFDReader::vtkzCFDReader
+	           PRIVATE 
+		   /gpfs/zenotech/home/jappa/workarea/poly/python3/zCFD/shared
+		   )
+
 vtk_module_link(zCFDReader::vtkzCFDReader)
 
 paraview_add_server_manager_xmls(

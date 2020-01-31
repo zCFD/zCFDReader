@@ -212,7 +212,7 @@ void vtkzCFDReader::ReadPython(std::map<int,std::string> &zoneToBc)
   if(env)
   {
     PyObject *obj = PySys_GetObject("path");
-    PyObject *pPath = PyString_FromString(env);
+    PyObject *pPath = PyUnicode_FromString(env);
     PyList_Append(obj,pPath);
     Py_DECREF(pPath);
 
@@ -242,7 +242,7 @@ void vtkzCFDReader::ReadPython(std::map<int,std::string> &zoneToBc)
     PyErr_Fetch(&e, &v, &t);
 
     //Get error message
-    char *pStrErrorMessage = PyString_AsString(v);
+    char *pStrErrorMessage = PyBytes_AsString(v);
 
     std::cout << "Python Exception: " << pStrErrorMessage << std::endl;
 
