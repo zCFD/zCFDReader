@@ -16,10 +16,10 @@ vtk_module_add_module(zCFDReader::vtkzCFDReader
   CLASSES ${classes}
   PRIVATE_HEADERS ${private_headers})
 
-vtk_module_include(zCFDReader::vtkzCFDReader
-	           PRIVATE 
-		   /gpfs/zenotech/home/jappa/workarea/poly/python3/zCFD/shared
-		   )
+#vtk_module_include(zCFDReader::vtkzCFDReader
+#	           PRIVATE 
+#		   /gpfs/zenotech/home/jappa/workarea/poly/python3/zCFD/INSTALL/icc_sse_impi/include/python3.7m
+#		   )
 
 vtk_module_link(zCFDReader::vtkzCFDReader)
 
