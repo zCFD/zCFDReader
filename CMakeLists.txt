@@ -17,5 +17,5 @@ paraview_plugin_build(
         LIBRARY_SUBDIRECTORY "plugins"
 	PLUGINS_FILE_NAME ".plugins"
 	TARGET plugins
-	AUTOLOAD plugins
+	AUTOLOAD ${plugins}
 	PLUGINS ${plugins})
