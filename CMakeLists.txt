@@ -8,6 +8,7 @@ set(BUILD_SHARED_LIBS ON)
 set(CMAKE_INSTALL_RPATH "\$ORIGIN")
 find_package(ParaView REQUIRED)
 find_package(Boost 1.50 REQUIRED COMPONENTS python)
+find_package(hdf5 REQUIRED)
 paraview_plugin_scan(
 	  PLUGIN_FILES "${CMAKE_CURRENT_SOURCE_DIR}/Plugin/paraview.plugin"
           PROVIDES_PLUGINS plugins
