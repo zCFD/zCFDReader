@@ -6,9 +6,10 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR}"
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR}")
 set(BUILD_SHARED_LIBS ON)
 set(CMAKE_INSTALL_RPATH "\$ORIGIN")
-find_package(ParaView REQUIRED)
 find_package(Boost 1.50 REQUIRED COMPONENTS python)
 find_package(hdf5 REQUIRED)
+find_package(Python REQUIRED)
+find_package(ParaView REQUIRED)
 paraview_plugin_scan(
 	  PLUGIN_FILES "${CMAKE_CURRENT_SOURCE_DIR}/Plugin/paraview.plugin"
           PROVIDES_PLUGINS plugins

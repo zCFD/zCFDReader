@@ -9,7 +9,8 @@ vtk_module_find_package(
   COMPONENTS python)
 
 vtk_module_find_package(
-  PACKAGE Python3)
+  PACKAGE Python3
+  COMPONENTS Development)
 
 vtk_module_find_package(
   PACKAGE hdf5 )
