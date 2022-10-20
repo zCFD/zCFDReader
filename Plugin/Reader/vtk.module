@@ -12,4 +12,4 @@ PRIVATE_DEPENDS
   VTK::mpi
   VTK::Python
   Boost::python
-  hdf5-shared
+  hdf5::hdf5-shared
